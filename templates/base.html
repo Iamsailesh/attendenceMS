@@ -1,0 +1,60 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> {% block title %}{% endblock title %}</title>
+    <link rel="stylesheet" href=" {% static 'css/navbar.css' %}">
+    {% block css %}{% endblock css %}
+    {% block js %}{% endblock js %}
+   
+</head>
+<body>
+    <div class="container">
+        <div class="left">
+            <ul>
+                <li><a href="" class="logo">
+                        <img src={% static 'images/img1.png' %}>
+                        <span class="div-item">Teacher</span>
+                    </a></li>
+                <li>
+                    <a href="">
+                        <i class="fas fa-menorah "></i>
+                        <span class="div-item">Dashboard</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <i class="fas fa-user"></i>
+                        <span class="div-item">Profile</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <i class="fas fa-chart-bar"></i>
+                        <span class="div-item">Classes</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="">
+                        <i class="fas fa-wrench"></i>
+                        <span class="div-item">Setting</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <i class="fas fa-sign-out-alt"></i>
+                        <span class="div-item">Log out</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+       
+    </div>
+    
+    {% block content %}{% endblock content %}
+</body>
+</html>

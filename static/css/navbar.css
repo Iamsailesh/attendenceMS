@@ -1,0 +1,159 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+*{
+    margin: 0;
+    padding: 0;
+    outline: none;
+    border: none ;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+body{
+    background: rgb(226, 226, 226);
+    
+}
+.container{
+    display: flex;
+    gap: 100px;
+}
+.left{
+    position: sticky;
+    top: 0;
+    bottom: 0 ;
+    height: 100vh;
+    left: 0;
+    width: 280px;
+    /* width: 90px; */
+    background: #fff;
+    overflow: hidden;
+    /* transition: 1s; */
+    
+    
+  
+
+} 
+.left:hover{
+    width: 280px;
+    transition: 1sec;
+}
+.logo{
+    text-align: center;
+    display: flex;
+    margin: 10px 0 0 0;
+    padding-bottom: 3rem;
+   
+    
+}
+.logo img{
+    width: 45px;
+    height: 45px;
+
+}
+.logo span{
+    font-weight: bold;
+    padding-left: 15px;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+a{
+    position: relative;
+    width: 280px;
+    font-size: 14px;
+    color: rgb(84, 83, 82);
+    display: table;
+    padding: 10px;
+    
+}
+.left .fas{
+    position: relative;
+    width: 70px;
+    height: 40px;
+    top: 10px;
+    font-size: 20px;
+    text-align: center;
+    
+    
+}
+.left-item{
+    position: relative;
+    top: 5px;
+    margin-left: 10px;
+    font-weight: bold;
+}
+a:hover{
+    background: #eee;
+}
+
+
+
+/* main body css */
+
+/* .main{
+    margin-right: 100px;
+}
+  */
+/* .main h1{
+    text-align: center;
+    color: cadetblue;
+}
+.main h2{
+    margin: auto;
+    text-align: center;
+    color: rgb(84, 83, 82);
+} */
+
+/*Calender css */
+.right{
+    margin: auto;
+   
+    
+
+    
+}
+table{
+    /* margin: auto; */
+    border-collapse: collapse;
+    background-color: rgb(182, 193, 189);
+    border-radius: 20px;
+    
+    
+}
+
+th, td {
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+
+th {
+    background-color: #eee;
+}
+
+td {
+    text-align: center;
+}
+
+.today {
+    background-color: rgba(18, 117, 18, 0.638);
+}
+#month-year{
+    color: rgb(84, 83, 82);
+    text-align: center;
+}
+
+/* Responsiveness */
+@media only screen and (max-width: 600px) {
+    table {
+        font-size: 0.8em;
+    }
+    
+    th, td {
+        padding: 5px;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    table {
+        font-size: 0.6em;
+    }
+}
+ 

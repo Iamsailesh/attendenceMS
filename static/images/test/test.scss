@@ -1,0 +1,40 @@
+.nav{
+    background-color: aquamarine;
+    
+
+    margin: 10px;
+    .container{
+        border: 1px solid;
+        display: flex;
+        justify-content: space-between;
+
+        .navItem{
+            display: flex;
+            gap: 50px;
+            align-items: center;
+        }
+        .buttons{
+            display: flex;
+        }
+    }
+}
+
+.featured{
+    .container{
+        display: flex;
+        justify-content: space-evenly;
+        .left{
+            .dash{
+                display: flex;
+                flex-direction: column;
+            }
+        }
+        .right{
+            img{
+                width: 200px;
+                height: 200px;
+                object-fit: cover;
+            }
+        }
+    }
+}
