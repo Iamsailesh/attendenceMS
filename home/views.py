@@ -1,20 +1,19 @@
 from django.shortcuts import render, HttpResponse
 
 # Create your views here.
-def index(request):
+def dashboard(request):
    # return HttpResponse("this is homepage")
-   return   render (request, "index.html")
+   return   render (request, "ams/dashboard.html")
 
 def profile(request):
-   return   render (request, "profile.html")
+   return   render (request, "users/profile.html")
    
 
 def setting(request):
-   return   render (request, "setting.html")
+   return   render (request, "users/setting.html")
    
 
-def classes(request):
-   return   render (request, "classes.html")
+
 
 
 def logout(request):

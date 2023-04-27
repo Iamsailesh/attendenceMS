@@ -9,14 +9,14 @@
     font-family: "Poppins", sans-serif;
 }
 body{
-    background: rgb(226, 226, 226);
+    background: rgb(213, 196, 196);
     
 }
-.container{
+.container11{
     display: flex;
     gap: 100px;
 }
-.left{
+.left11{
     position: sticky;
     top: 0;
     bottom: 0 ;
@@ -24,7 +24,7 @@ body{
     left: 0;
     width: 280px;
     /* width: 90px; */
-    background: #fff;
+    background: #d7d5d5;
     overflow: hidden;
     /* transition: 1s; */
     
@@ -32,11 +32,11 @@ body{
   
 
 } 
-.left:hover{
+.left11:hover{
     width: 280px;
     transition: 1sec;
 }
-.logo{
+.logo11{
     text-align: center;
     display: flex;
     margin: 10px 0 0 0;
@@ -44,18 +44,18 @@ body{
    
     
 }
-.logo img{
+.logo11 img{
     width: 45px;
     height: 45px;
 
 }
-.logo span{
+.logo11 span{
     font-weight: bold;
     padding-left: 15px;
     font-size: 18px;
     text-transform: uppercase;
 }
-a{
+.left11 a{
     position: relative;
     width: 280px;
     font-size: 14px;
@@ -64,7 +64,7 @@ a{
     padding: 10px;
     
 }
-.left .fas{
+.left11 .fas{
     position: relative;
     width: 70px;
     height: 40px;
@@ -80,8 +80,10 @@ a{
     margin-left: 10px;
     font-weight: bold;
 }
-a:hover{
+.left11 a:hover{
     background: #eee;
+    
+    
 }
 
 
@@ -103,57 +105,6 @@ a:hover{
 } */
 
 /*Calender css */
-.right{
-    margin: auto;
-   
-    
 
-    
-}
-table{
-    /* margin: auto; */
-    border-collapse: collapse;
-    background-color: rgb(182, 193, 189);
-    border-radius: 20px;
-    
-    
-}
-
-th, td {
-    padding: 10px;
-    border: 1px solid #ccc;
-}
-
-th {
-    background-color: #eee;
-}
-
-td {
-    text-align: center;
-}
-
-.today {
-    background-color: rgba(18, 117, 18, 0.638);
-}
-#month-year{
-    color: rgb(84, 83, 82);
-    text-align: center;
-}
 
 /* Responsiveness */
-@media only screen and (max-width: 600px) {
-    table {
-        font-size: 0.8em;
-    }
-    
-    th, td {
-        padding: 5px;
-    }
-}
-
-@media only screen and (max-width: 400px) {
-    table {
-        font-size: 0.6em;
-    }
-}
- 
