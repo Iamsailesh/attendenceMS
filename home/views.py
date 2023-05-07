@@ -16,5 +16,9 @@ def setting(request):
 
 
 
+def login(request):
+   return HttpResponse("this is classes")
+
+
 def logout(request):
    return HttpResponse("this is classes")
